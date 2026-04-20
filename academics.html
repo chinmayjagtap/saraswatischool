@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics — Saraswati High School</title>
+    <meta name="description" content="Explore the academic programs, curriculum, and extracurricular activities at Saraswati High School.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div class="page-transition">
+        <div class="transition-inner"><div class="transition-logo">ॐ</div></div>
+    </div>
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon"><span class="logo-om">ॐ</span></div>
+                <div class="logo-text">
+                    <span class="logo-title">Saraswati</span>
+                    <span class="logo-subtitle">High School</span>
+                </div>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="academics.html" class="nav-link active">Academics</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="page-hero-content">
+                <span class="page-breadcrumb reveal-up">Home / Academics</span>
+                <h1 class="page-hero-title reveal-up" style="--delay: 0.1s">Our <span class="gradient-text">Academics</span></h1>
+                <p class="page-hero-description reveal-up" style="--delay: 0.2s">A comprehensive curriculum designed to nurture curiosity, creativity, and critical thinking.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Programs -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal-up">Programs</span>
+                <h2 class="section-title reveal-up">Academic <span class="gradient-text">Programs</span></h2>
+                <p class="section-description reveal-up">From nursery to 12th standard, we offer a structured pathway to academic excellence.</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card reveal-up" style="--delay: 0.1s">
+                    <div class="program-level">Primary</div>
+                    <div class="program-badge">Grades 1-5</div>
+                    <h3 class="program-title">Primary School</h3>
+                    <p class="program-description">Building strong foundations through activity-based learning, phonics, and creative exploration. Our primary program focuses on developing reading, writing, and arithmetic skills in a joyful environment.</p>
+                    <ul class="program-features">
+                        <li>Activity-Based Learning</li>
+                        <li>English & Hindi Medium</li>
+                        <li>Art & Craft Sessions</li>
+                        <li>Sports & Yoga</li>
+                        <li>Value Education</li>
+                    </ul>
+                    <div class="program-glow"></div>
+                </div>
+                <div class="program-card featured reveal-up" style="--delay: 0.2s">
+                    <div class="program-level">Middle</div>
+                    <div class="program-badge">Grades 6-8</div>
+                    <h3 class="program-title">Middle School</h3>
+                    <p class="program-description">Expanding horizons with an enriched curriculum that includes sciences, mathematics, languages, and social studies. Students develop analytical and communication skills.</p>
+                    <ul class="program-features">
+                        <li>Science Laboratories</li>
+                        <li>Computer Education</li>
+                        <li>Third Language Option</li>
+                        <li>Project-Based Learning</li>
+                        <li>Inter-School Competitions</li>
+                    </ul>
+                    <div class="program-glow"></div>
+                </div>
+                <div class="program-card reveal-up" style="--delay: 0.3s">
+                    <div class="program-level">High</div>
+                    <div class="program-badge">Grades 9-12</div>
+                    <h3 class="program-title">High School</h3>
+                    <p class="program-description">Preparing students for board examinations and higher education with specialized streams — Science, Commerce, and Arts. Rigorous academics combined with career guidance.</p>
+                    <ul class="program-features">
+                        <li>Science / Commerce / Arts</li>
+                        <li>Board Exam Preparation</li>
+                        <li>Career Counselling</li>
+                        <li>Competitive Exam Coaching</li>
+                        <li>Leadership Programs</li>
+                    </ul>
+                    <div class="program-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum -->
+    <section class="section curriculum-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal-up">Curriculum</span>
+                <h2 class="section-title reveal-up">What Students <span class="gradient-text">Learn</span></h2>
+            </div>
+            <div class="curriculum-grid">
+                <div class="curriculum-card reveal-up" style="--delay: 0.1s">
+                    <div class="curr-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                    </div>
+                    <h4>Languages</h4>
+                    <p>English, Hindi, Sanskrit, and Marathi — building multilingual proficiency</p>
+                </div>
+                <div class="curriculum-card reveal-up" style="--delay: 0.15s">
+                    <div class="curr-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></svg>
+                    </div>
+                    <h4>Mathematics</h4>
+                    <p>From arithmetic to advanced calculus — developing logical reasoning</p>
+                </div>
+                <div class="curriculum-card reveal-up" style="--delay: 0.2s">
+                    <div class="curr-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+                    </div>
+                    <h4>Sciences</h4>
+                    <p>Physics, Chemistry, Biology — hands-on experiments & discovery</p>
+                </div>
+                <div class="curriculum-card reveal-up" style="--delay: 0.25s">
+                    <div class="curr-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h4>Social Studies</h4>
+                    <p>History, Geography, Civics — understanding our world and society</p>
+                </div>
+                <div class="curriculum-card reveal-up" style="--delay: 0.3s">
+                    <div class="curr-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                    </div>
+                    <h4>Computer Science</h4>
+                    <p>Programming, digital literacy, and information technology</p>
+                </div>
+                <div class="curriculum-card reveal-up" style="--delay: 0.35s">
+                    <div class="curr-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM21 16c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2z"/></svg>
+                    </div>
+                    <h4>Arts & Music</h4>
+                    <p>Visual arts, music, dance, and drama — unleashing creativity</p>
+                </div>
+                <div class="curriculum-card reveal-up" style="--delay: 0.4s">
+                    <div class="curr-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
+                    </div>
+                    <h4>Physical Education</h4>
+                    <p>Sports, yoga, fitness — healthy body, healthy mind</p>
+                </div>
+                <div class="curriculum-card reveal-up" style="--delay: 0.45s">
+                    <div class="curr-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                    </div>
+                    <h4>Value Education</h4>
+                    <p>Moral science, community service, and character building</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extra-Curricular -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal-up">Beyond Classroom</span>
+                <h2 class="section-title reveal-up">Extra-Curricular <span class="gradient-text">Activities</span></h2>
+                <p class="section-description reveal-up">We believe in developing the whole child — mind, body, and spirit.</p>
+            </div>
+            <div class="activities-grid">
+                <div class="activity-card reveal-up" style="--delay: 0.1s">
+                    <div class="activity-emoji">🏏</div>
+                    <h4>Cricket</h4>
+                </div>
+                <div class="activity-card reveal-up" style="--delay: 0.15s">
+                    <div class="activity-emoji">⚽</div>
+                    <h4>Football</h4>
+                </div>
+                <div class="activity-card reveal-up" style="--delay: 0.2s">
+                    <div class="activity-emoji">🏸</div>
+                    <h4>Badminton</h4>
+                </div>
+                <div class="activity-card reveal-up" style="--delay: 0.25s">
+                    <div class="activity-emoji">♟️</div>
+                    <h4>Chess</h4>
+                </div>
+                <div class="activity-card reveal-up" style="--delay: 0.3s">
+                    <div class="activity-emoji">🎨</div>
+                    <h4>Art & Painting</h4>
+                </div>
+                <div class="activity-card reveal-up" style="--delay: 0.35s">
+                    <div class="activity-emoji">🎵</div>
+                    <h4>Music & Dance</h4>
+                </div>
+                <div class="activity-card reveal-up" style="--delay: 0.4s">
+                    <div class="activity-emoji">🎭</div>
+                    <h4>Drama</h4>
+                </div>
+                <div class="activity-card reveal-up" style="--delay: 0.45s">
+                    <div class="activity-emoji">🗣️</div>
+                    <h4>Debate</h4>
+                </div>
+                <div class="activity-card reveal-up" style="--delay: 0.5s">
+                    <div class="activity-emoji">🧪</div>
+                    <h4>Science Club</h4>
+                </div>
+                <div class="activity-card reveal-up" style="--delay: 0.55s">
+                    <div class="activity-emoji">📚</div>
+                    <h4>Book Club</h4>
+                </div>
+                <div class="activity-card reveal-up" style="--delay: 0.6s">
+                    <div class="activity-emoji">🧘</div>
+                    <h4>Yoga</h4>
+                </div>
+                <div class="activity-card reveal-up" style="--delay: 0.65s">
+                    <div class="activity-emoji">🌱</div>
+                    <h4>Eco Club</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section">
+        <div class="cta-bg-shapes">
+            <div class="cta-shape cta-shape-1"></div>
+            <div class="cta-shape cta-shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title reveal-up">Want to Know More About <span class="gradient-text">Our Programs?</span></h2>
+                <p class="cta-description reveal-up" style="--delay: 0.1s">Get in touch with us to learn more about our curriculum, admissions, and facilities.</p>
+                <div class="cta-buttons reveal-up" style="--delay: 0.2s">
+                    <a href="contact.html" class="btn btn-primary btn-large ripple-btn"><span>Contact Us</span></a>
+                    <a href="gallery.html" class="btn btn-outline-light btn-large ripple-btn"><span>View Gallery</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <div class="logo-icon"><span class="logo-om">ॐ</span></div>
+                        <div class="logo-text">
+                            <span class="logo-title">Saraswati</span>
+                            <span class="logo-subtitle">High School</span>
+                        </div>
+                    </a>
+                    <p class="footer-about">Dedicated to nurturing young minds with a perfect blend of traditional values and modern education since 1991.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+                        <a href="#" class="social-link" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z"/><polygon points="9.75,15.02 15.5,11.75 9.75,8.48" fill="#fff"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Academics</h4>
+                    <ul>
+                        <li><a href="academics.html">Primary School</a></li>
+                        <li><a href="academics.html">Middle School</a></li>
+                        <li><a href="academics.html">High School</a></li>
+                        <li><a href="academics.html">Curriculum</a></li>
+                        <li><a href="academics.html">Examination</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <div class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>123 Education Lane, Knowledge City, India — 400001</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                        <span>+91 98765 43210</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <span>info@saraswatischool.edu</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Saraswati High School. All Rights Reserved.</p>
+                <p>Nurturing Minds, Shaping Futures — Since 1991</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
