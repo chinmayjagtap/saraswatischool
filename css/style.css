@@ -256,12 +256,13 @@ input, textarea, select {
 }
 
 .logo-subtitle {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 500;
     color: rgba(255,255,255,0.8);
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     transition: color var(--transition);
+    white-space: nowrap;
 }
 
 .navbar.scrolled .logo-subtitle {
